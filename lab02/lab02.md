@@ -31,16 +31,30 @@
      }
      ```
    - Схема ответа: `<product-json>` (созданный продукт)
+   - ![alt text](images/image-2.png)
+   - ![alt text](images/image-1.png)
+   - ![alt text](images/image-11.png)
 2. Получить продукт по его id
    - `GET /product/{product_id}`
    - Схема ответа: `<product-json>`
+   - ![alt text](images/image-3.png)
+   - ![alt text](images/image-4.png)
+   - ![alt text](images/image-12.png)
 3. Обновить существующий продукт (обновляются только те поля продукта, которые были переданы в теле запроса)
    - `PUT /product/{product_id}`
    - Схема запроса: `<product-json>` (некоторые поля могут быть опущены)
    - Схема ответа: `<product-json>` (обновлённый продукт)
+   - ![alt text](images/image-5.png)
+   - ![alt text](images/image-6.png)
+   - ![alt text](images/image-7.png)
+   - ![alt text](images/image-13.png)
 4. Удалить продукт по его id
    - `DELETE /product/{product_id}`
    - Схема ответа: `<product-json>` (удалённый продукт)
+   - ![alt text](images/image-8.png)
+   - ![alt text](images/image-9.png)
+   - ![alt text](images/image-10.png)
+   - ![alt text](images/mage-14.png)
 5. Получить список всех продуктов 
    - `GET /products`  
    - Схема ответа:
@@ -51,6 +65,7 @@
        ... 
      ]
      ```
+     ![alt text](images/image.png)
 
 Предусмотрите возвращение ошибок (например, если запрашиваемого продукта не существует).
 
@@ -73,15 +88,19 @@ todo
    - `POST product/{product_id}/image`
    - Запрос содержит бинарный файл — изображение  
      <img src="images/post-image.png" width=500 />
+
+     ![alt text](images/image-100.png)
 2. Получить иконку:
    - `GET product/{product_id}/image`
    - В ответе передаётся только сама иконка  
      <img src="images/get-image.png" width=500 />
+     ![alt text](images/image-200.png)
 
 Измените операции в Задании А так, чтобы теперь схема продукта содержала сведения о загруженной иконке, например, имя файла или путь:
 ```json
 "icon": "string"
 ```
+![alt text](images/image-300.png)
 
 #### Демонстрация работы
 todo
